@@ -1,0 +1,84 @@
+.app {
+    height: 100%;
+}
+
+#home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container-1, .container-2 {
+    margin: auto;
+    width: 50%;
+    border: 1px solid;
+    padding: 20px;
+}
+
+.container-1 {
+    text-align: center;
+}
+
+.container-2 {
+    flex-grow: 1;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h3{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    margin-bottom: 5px;
+}
+
+.add, .remove {
+    margin: 0 4px;
+}
+
+.error-text {
+    margin: 0;
+    margin-top: 5px;
+    color: red;
+}
+
+.divider {
+    margin-bottom: 10px;
+}
+
+.container-3 {
+    flex-grow: 1;
+    margin-top: 10px;
+    overflow-y: auto;
+}
+
+.transaction {
+    margin: 0;
+    margin-bottom: 6px;
+    color: #666666;
+}
+
+@media screen and (max-width: 992px) {
+    .container-1, .container-2 {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    .container-1, .container-2 {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container-1, .container-2 {
+        width: 90%;
+    }
+}
+
